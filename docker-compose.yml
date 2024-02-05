@@ -1,0 +1,14 @@
+services:
+  snapshoter741:
+    build: .
+    container_name: c_snap
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: '4g'
+    volumes:
+      - ./:/code
+      # - $DATA_DIR:/tmp/app-data

@@ -10,5 +10,28 @@ data/*
 *.gif
 *.data
 *.cfg
-*.txt.*
 .nfsc*
+
+
+# python
+*.pyc
+
+# cache
+__pycache__
+.cache
+
+# test
+.coverage*
+coverage.xml
+report.xml
+testdata
+
+# doc
+public
+
+# package
+dist
+_version.py
+*.so
+
+.vscode/
